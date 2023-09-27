@@ -95,7 +95,7 @@ void subtrarir(String? valor1, String? valor2) {
         double num1 = double.tryParse(valor1) ?? 0.0;
         double num2 = double.tryParse(valor2) ?? 0.0;
         print('');
-        print('O valor da subtração é ${num1 + num2}');
+        print('O valor da subtração é ${num1 - num2}');
         print('');
       } catch (e) {
         throw (Exception("ERRO! ${valor1} e ${valor2} não são valores numéricos"));
