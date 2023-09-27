@@ -18,7 +18,7 @@ void menu() {
       try {
         int argumento = int.parse(entradaValor);
       } catch (e) {
-        throw Exception('ERRO');
+        throw Exception('ERRO $entradaValor não é um valor numérico !');
       }
     } else {
       print("ERRO! não foi passado nenhum valor !");
