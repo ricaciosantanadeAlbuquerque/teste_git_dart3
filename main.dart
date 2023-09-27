@@ -88,11 +88,15 @@ void soma(String? valor1, String? valo2) {
 void subtrarir(String? valor1, String? valor2) {
   if (valor1 != null && valor2 != null) {
     if (valor1.isNotEmpty && valor2.isNotEmpty) {
-
-      double num1 = double.tryParse(valor1) ?? 0.0;
-      double num2 = double.tryParse(valor2) ?? 0.0;
-
-
+      try {
+        double num1 = double.tryParse(valor1) ?? 0.0;
+        double num2 = double.tryParse(valor2) ?? 0.0;
+        print('');
+        print('O valor da subtração é ${num1 + num2}');
+        print('');
+      } catch (e) {
+        throw (Exception("ERRO! ${valor1} e ${valor2} não são valores numéricos"));
+      }
     } else {
       print("ERRO! valor inexistente ");
     }
