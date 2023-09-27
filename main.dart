@@ -74,7 +74,8 @@ void soma(String? valor1, String? valo2) {
         double num1 = double.tryParse(valor1) ?? 0.0;
         double num2 = double.tryParse(valo2) ?? 0.0;
 
-        print(num1 + num2);
+        print("\n O valor da soma é ${num1 + num2}\n");
+        
       } catch (e) {
         throw (Exception('ERRO! o valor ${valor1} e $valo2 não são valores numericos'));
       }
