@@ -10,4 +10,20 @@ void menu() {
   print("Digite 5 para sair");
 
   String? entradaValor = stdin.readLineSync();
+
+  if (entradaValor != null) {
+    if (entradaValor.isNotEmpty) {
+      try {
+        
+        int argumento = int.parse(entradaValor);
+
+      } catch (e) {
+        throw Exception('ERRO');
+      }
+    } else {
+      print("ERRO! não foi passado nenhum valor !");
+    }
+  } else {
+    print("ERRO! valor nulo");
+  }
 }
