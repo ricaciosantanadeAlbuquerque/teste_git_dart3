@@ -27,3 +27,36 @@ void menu() {
     print("ERRO! valor nulo");
   }
 }
+
+void escolha({required int op}) {
+  switch (op) {
+    case 1:
+      print("Digite o primairo valor");
+      String? entrada1 = stdin.readLineSync();
+      print("Digite o segundo valor ");
+      String? entrada2 = stdin.readLineSync();
+      break;
+    case 2:
+      print("Digite o primairo valor");
+      String? entrada1 = stdin.readLineSync();
+      print("Digite o segundo valor ");
+      String? entrada2 = stdin.readLineSync();
+      break;
+    case 3:
+      print("Digite o primairo valor");
+      String? entrada1 = stdin.readLineSync();
+      print("Digite o segundo valor ");
+      String? entrada2 = stdin.readLineSync();
+      break;
+    case 4:
+      print("Digite o primairo valor");
+      String? entrada1 = stdin.readLineSync();
+      print("Digite o segundo valor ");
+      String? entrada2 = stdin.readLineSync();
+      break;
+    case 5:
+      exit(0);
+    default:
+      print('Valor fora da Faixa !');
+  }
+}
