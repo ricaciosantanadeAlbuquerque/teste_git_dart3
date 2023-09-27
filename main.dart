@@ -116,11 +116,12 @@ void multiplicar(String? valor1, String? valor2) {
         double num2 = double.tryParse(valor2) ?? 0.0;
 
         print("\n O resultado ${num1 * num2}\n");
-        
       } catch (e) {
         throw (Exception('ERRO! os valores $valor1 e $valor2'));
       }
-    } else {}
+    } else {
+      print("ERRO! o valor não foi digitado.");
+    }
   } else {
     print("Valor Nulo !");
   }
