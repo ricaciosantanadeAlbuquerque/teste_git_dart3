@@ -64,6 +64,9 @@ void escolha({required int op}) {
       String? entrada1 = stdin.readLineSync();
       print("Digite o segundo valor ");
       String? entrada2 = stdin.readLineSync();
+
+      dividir(entrada1, entrada2);
+      
       break;
     case 5:
       exit(0);
