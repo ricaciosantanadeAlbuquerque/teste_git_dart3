@@ -19,7 +19,6 @@ void menu() {
         int argumento = int.parse(entradaValor);
 
         escolha(op: argumento);
-        
       } catch (e) {
         throw Exception('ERRO $entradaValor não é um valor numérico !');
       }
@@ -83,5 +82,21 @@ void soma(String? valor1, String? valo2) {
     }
   } else {
     print("ERRO! valores nulos");
+  }
+}
+
+void subtrarir(String? valor1, String? valor2) {
+  if (valor1 != null && valor2 != null) {
+    if (valor1.isNotEmpty && valor2.isNotEmpty) {
+
+      double num1 = double.tryParse(valor1) ?? 0.0;
+      double num2 = double.tryParse(valor2) ?? 0.0;
+
+
+    } else {
+      print("ERRO! valor inexistente ");
+    }
+  } else {
+    print("ERRO! valor Nulo ou inexistente");
   }
 }
