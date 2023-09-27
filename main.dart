@@ -27,3 +27,21 @@ void menu() {
     print("ERRO! valor nulo");
   }
 }
+
+void escolha({required int op}) {
+  switch (op) {
+    case 1:
+      break;
+    case 2:
+      break;
+    case 3:
+      break;
+    case 4:
+      break;
+    case 5:
+      exit(0);
+      break;
+    default:
+      print('Valor fora da Faixa !');
+  }
+}
