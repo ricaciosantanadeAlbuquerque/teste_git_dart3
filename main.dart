@@ -48,7 +48,7 @@ void escolha({required int op}) {
       String? entrada2 = stdin.readLineSync();
 
       subtrarir(entrada1, entrada2);
-      
+
       break;
     case 3:
       print("Digite o primairo valor");
@@ -105,5 +105,23 @@ void subtrarir(String? valor1, String? valor2) {
     }
   } else {
     print("ERRO! valor Nulo ou inexistente");
+  }
+}
+
+void multiplicar(String? valor1, String? valor2) {
+  if (valor1 != null && valor2 != null) {
+    if (valor1.isNotEmpty && valor2.isNotEmpty) {
+      try {
+        double num1 = double.tryParse(valor1) ?? 0.0;
+        double num2 = double.tryParse(valor2) ?? 0.0;
+
+        print("\n O resultado ${num1 * num2}\n");
+        
+      } catch (e) {
+        throw (Exception('ERRO! os valores $valor1 e $valor2'));
+      }
+    } else {}
+  } else {
+    print("Valor Nulo !");
   }
 }
