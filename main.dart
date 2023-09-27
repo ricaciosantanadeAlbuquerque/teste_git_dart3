@@ -40,7 +40,6 @@ void escolha({required int op}) {
       break;
     case 5:
       exit(0);
-      break;
     default:
       print('Valor fora da Faixa !');
   }
