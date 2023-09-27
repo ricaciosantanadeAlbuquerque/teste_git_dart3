@@ -1,6 +1,8 @@
 import 'dart:io';
 
-void main() {}
+void main() {
+  menu();
+}
 
 void menu() {
   print("Digite 1 para somar");
@@ -14,9 +16,7 @@ void menu() {
   if (entradaValor != null) {
     if (entradaValor.isNotEmpty) {
       try {
-        
         int argumento = int.parse(entradaValor);
-
       } catch (e) {
         throw Exception('ERRO');
       }
