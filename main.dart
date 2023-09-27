@@ -129,3 +129,24 @@ void multiplicar(String? valor1, String? valor2) {
     print("Valor Nulo !");
   }
 }
+
+void dividir(String? valor1, String? valor2) {
+  if (valor1 != null && valor2 != null) {
+    if (valor1.isNotEmpty && valor2.isNotEmpty) {
+      try {
+        double num1 = double.tryParse(valor1) ?? 0.0;
+        double num2 = double.tryParse(valor2) ?? 0.0;
+        print("");
+        print("O valor da Divisão é ${num1 / num2}");
+        print("");
+      } catch (e) {
+        throw (Exception("ERRO! o valor ${valor1} e ${valor2} não São valores vãlidos"));
+      }
+      ;
+    } else {
+      print('ERRO! valor nulo !');
+    }
+  } else {
+    print("Digite um valor não nulo ");
+  }
+}
