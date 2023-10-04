@@ -1,7 +1,11 @@
 import 'dart:io';
 
+import 'test.dart';
+
 void main() {
   menu();
+
+  Test.escrever(); // Método estático! Método que pertence a Classe e não a sua insTância
 }
 
 void menu() {
@@ -66,7 +70,7 @@ void escolha({required int op}) {
       String? entrada2 = stdin.readLineSync();
 
       dividir(entrada1, entrada2);
-      
+
       break;
     case 5:
       exit(0);
