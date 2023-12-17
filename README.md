@@ -8,3 +8,5 @@ _CheckOut, **Tela de produto**, Catálogo,Home com banner_
 __CheckOut, *Tela de produto*, Catálogo,Home com banner__
 
 ###### Melhorias do Projeto
+
+__Melhoria 1__, _Melhoria 2_
