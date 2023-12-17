@@ -25,3 +25,7 @@ __Melhoria 1__, _Melhoria 2_
 2. Intergração Com outro Pagamentos
 3. Sistema de Bonus primeira Compra
 
+##### Imagem Local
+
+![Celular](assets/image/fundo.jpeg)
+
