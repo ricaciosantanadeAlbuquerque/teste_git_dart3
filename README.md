@@ -50,4 +50,11 @@ __Melhoria 1__, _Melhoria 2_
     };
  }
 ```
+###### Lista de checagem
+
+- [] A
+- [x] B
+- [] C
+- [X] d
+
 
