@@ -44,10 +44,10 @@ __Melhoria 1__, _Melhoria 2_
 #### codigo fonte
 
 ```Dart
-  void Function soma(String text,double value){
+ Function soma(String text,double value){
     return (){
         print('$text  $value');
-    }
+    };
  }
 ```
 
