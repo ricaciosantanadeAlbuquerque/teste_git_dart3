@@ -29,3 +29,7 @@ __Melhoria 1__, _Melhoria 2_
 
 ![Celular](assets/image/fundo.jpeg)
 
+#### Imagem da Web
+
+![Moto](https://production.autoforce.com/uploads/version/profile_image/7517/comprar-vermelho_7b37d19739.png)
+
